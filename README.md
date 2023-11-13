@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+![ezgif com-gif-maker](https://github.com/cihanbagriyanik/Appointment_App_react/assets/132518854/cf9e8722-acf9-4a9f-833c-0e96152f5872)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
