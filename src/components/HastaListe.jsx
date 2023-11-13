@@ -25,18 +25,8 @@ const HastaListe = ({ hastalar, setHastalar, doktorlar }) => {
               a.doctorName === patient.myDoctor && (
                 <div
                   key={a.id}
-                  className={
-                    patient.isDone ? "trueBittiStil" : "falseBitmediStil"
-                  }
-                  onDoubleClick={() => handleDoubleClick(patient)
-                    // setHastalar(
-                    //   hastalar.map((hst) =>
-                    //     hst.id === patient.id
-                    //       ? { ...hst, isDone: !hst.isDone }
-                    //       : hst
-                    //   )
-                    // )
-                  }
+                  className={patient.isDone ? "trueBittiStil" : "falseBitmediStil"}
+                  onDoubleClick={() => handleDoubleClick(patient)}
                 >
                   <div>
                     <h2>{patient.text} </h2>
