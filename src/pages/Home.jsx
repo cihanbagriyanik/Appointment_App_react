@@ -8,7 +8,7 @@ const Home = () => {
     ? (JSON.parse(localStorage.getItem("hastalar")))
     : hastaData);
 
-  console.log(hastalar);
+  // console.log(hastalar);
 
   // const [hastalar, setHastalar] = useState(hastaData);
   const [doktorlar, setDoktorlar] = useState(doctorData);

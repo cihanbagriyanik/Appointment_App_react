@@ -2,7 +2,7 @@ import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
 const HastaListe = ({ hastalar, setHastalar, doktorlar }) => {
 
-  console.log(hastalar);
+  // console.log(hastalar);
   return (
     <div className="hastalar">
       {/* doktorlar dizisi 4 elemanlıysa bütün hastalar basılır, doktor dizisi tek elemanlı olduğunda ise o doktorun ismiyle doktoru eşleşen hastalar basılır */}
