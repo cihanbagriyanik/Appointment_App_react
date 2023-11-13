@@ -2,6 +2,18 @@ import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
 const HastaListe = ({ hastalar, setHastalar, doktorlar }) => {
 
+
+  const handleDoubleClick = (patient) => {
+
+    const updatedHastalar = hastalar.map((hst) =>
+      hst.id === patient.id ? { ...hst, isDone: !hst.isDone } : hst
+    );
+
+    localStorage.setItem('hastalar', JSON.stringify(updatedHastalar));
+
+    setHastalar(updatedHastalar);
+  };
+
   // console.log(hastalar);
   return (
     <div className="hastalar">
@@ -16,14 +28,14 @@ const HastaListe = ({ hastalar, setHastalar, doktorlar }) => {
                   className={
                     patient.isDone ? "trueBittiStil" : "falseBitmediStil"
                   }
-                  onDoubleClick={() =>
-                    setHastalar(
-                      hastalar.map((hst) =>
-                        hst.id === patient.id
-                          ? { ...hst, isDone: !hst.isDone }
-                          : hst
-                      )
-                    )
+                  onDoubleClick={() => handleDoubleClick(patient)
+                    // setHastalar(
+                    //   hastalar.map((hst) =>
+                    //     hst.id === patient.id
+                    //       ? { ...hst, isDone: !hst.isDone }
+                    //       : hst
+                    //   )
+                    // )
                   }
                 >
                   <div>
