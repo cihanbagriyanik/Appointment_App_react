@@ -4,7 +4,7 @@ import HastaListe from "../components/HastaListe";
 import { doctorData, hastaData } from "../helper/Data";
 const Home = () => {
 
-  const [hastalar, setHastalar] = useState((JSON.parse(localStorage.getItem("hastalar")).length > 0)
+  const [hastalar, setHastalar] = useState((JSON.parse(localStorage.getItem("hastalar"))).length > 0
     ? (JSON.parse(localStorage.getItem("hastalar")))
     : hastaData);
 
