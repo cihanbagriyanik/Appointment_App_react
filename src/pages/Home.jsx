@@ -21,6 +21,7 @@ const Home = () => {
     setDoktorlar(tikla ? doktorlar.filter((i) => i.id === abc) : doctorData)
 
   }
+  
   return (
     <div style={{ display: tikla ? "block" : "flex" }}>
       <div>
