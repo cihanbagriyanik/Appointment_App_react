@@ -14,7 +14,6 @@ const Home = () => {
   const [doktorlar, setDoktorlar] = useState(doctorData);
   const [tikla, setTikla] = useState(true)
 
-
   const doctorClick = (abc) => {
     //tıkla yı değiştir
     setTikla(!tikla)
