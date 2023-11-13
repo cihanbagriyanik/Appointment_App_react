@@ -8,7 +8,11 @@ const Home = () => {
   //   ? (JSON.parse(localStorage.getItem("hastalar")))
   //   : hastaData);
 
-  const [hastalar, setHastalar] = useState(JSON.parse(localStorage.getItem("hastalar")) || hastaData)
+  const [hastalar, setHastalar] = useState((JSON.parse(localStorage.getItem("hastalar"))?.length > 0)
+    ? (JSON.parse(localStorage.getItem("hastalar")))
+    : hastaData);
+
+  // const [hastalar, setHastalar] = useState(JSON.parse(localStorage.getItem("hastalar")) || hastaData)
   // console.log(hastalar);
 
   // const [hastalar, setHastalar] = useState(hastaData);
