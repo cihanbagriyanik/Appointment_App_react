@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 const HastaEkle = ({ hastalar, setHastalar, doktorlar, setDoktorlar, setTikla, doctorData, doctorClick }) => {
   const [patientName, setName] = useState("")
   const [tarih, setTarih] = useState("")
-  console.log(doktorlar);//doktorlar dizisi tek elemanlı geldi
+  // console.log(doktorlar);//doktorlar dizisi tek elemanlı geldi
   const handleSubmiT = (e) => {
     e.preventDefault(); //direk submit olayı yapmadan önce alttaki kodlara bak
 
